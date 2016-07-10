@@ -20,5 +20,3 @@
 		$ ./node_modules/.bin/nightwatch [source] 	
 		
 'Currently default commandline and xml report is generated.
-
-'CI - https://snap-ci.com/DeChrish/tw-marsair/branch/master
