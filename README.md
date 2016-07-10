@@ -1,7 +1,7 @@
-# webdriver test for MarsAir App
-# Test data is hardcoded
+# endtoend test for sample app
 
-Initial Setup
+
+#Initial Setup
 
 ~ packages required
 
@@ -11,14 +11,16 @@ Initial Setup
 4. selenium-server-standalone-2.53.1
 
 
-Running selenium server manually
+#Running selenium server manually
 	To run the selenium server manually, from the directory with the jar run the following:
 	$ java -jar selenium-server-standalone-{VERSION}.jar
 
-Install packages
+#Install packages
 	npm install
 
-Test execution
+#Test execution
 	$ ./node_modules/.bin/nightwatch [source] 	
 		
-Currently default commandline and xml report is generated.
+~Currently default commandline and xml report is generated.
+
+CI - https://snap-ci.com/DeChrish/tw-marsair/branch/master
