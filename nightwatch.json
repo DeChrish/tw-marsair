@@ -5,7 +5,18 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "",
-  
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "lib/selenium-server-standalone-2.53.1.jar",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+
+    }
+  },
+
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
@@ -18,6 +29,14 @@
       },
       "desiredCapabilities": {
         "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
