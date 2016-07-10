@@ -16,25 +16,24 @@
 
     }
   },
-
-  "test_settings" : {
+  
+ "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4445,
+      "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
         "enabled" : false,
         "path" : ""
       },
-      "desiredCapabilities" : {
-        "browserName" : "phantomjs",
-        "javascriptEnabled" : true,
-        "acceptSslCerts" : true,
-        "phantomjs.binary.path" : "node_modules/.bin/phantomjs",
-        "phantomjs.cli.args" : ["--version"]
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
       }
     },
+
 
     "chrome" : {
       "desiredCapabilities": {
