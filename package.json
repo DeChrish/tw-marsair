@@ -1,0 +1,8 @@
+{
+  "name": "tw-MarsAir",
+  "version": "0.0.1",
+  "description": "endtoend test for MarsAir app",
+  "dependencies": {
+    "nightwatch": "0.9.5"
+  }  
+}
