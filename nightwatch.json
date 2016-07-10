@@ -7,7 +7,7 @@
   "globals_path" : "",
 
   "selenium" : {
-    "start_process" : true,
+    "start_process" : false,
     "server_path" : "lib/selenium-server-standalone-2.53.1.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
@@ -20,17 +20,19 @@
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
+      "selenium_port"  : 4445,
       "selenium_host"  : "localhost",
       "silent": true,
       "screenshots" : {
         "enabled" : false,
         "path" : ""
       },
-      "desiredCapabilities": {
-        "browserName": "firefox",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "node_modules/.bin/phantomjs",
+        "phantomjs.cli.args" : ["--version"]
       }
     },
 
