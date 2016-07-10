@@ -22,5 +22,17 @@ module.exports = {
       .pause(1000)
       .verify.containsText('#content', 'Sorry, there are no more seats available.')
       .end();
+  },
+  'basic search - should display error message when return month is selected within one year' : function (browser) {
+    browser
+      .url('http://pradeepchristhuraj.marsair.tw/')
+      .waitForElementVisible('body', 1000)
+      .setValue('select[id=departing]', 'July')
+      .setValue('select[id=returning]', 'December')
+      .waitForElementVisible('input[type=submit]', 1000)
+      .click('input[type=submit]')
+      .pause(1000)
+      .verify.containsText('#content p', 'Unfortunately, this schedule is not possible. Please try again.')
+      .end();
   }
 };
